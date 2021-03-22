@@ -11,9 +11,9 @@
     </parent>
 
     <groupId>com.spring.server</groupId>
-    <artifactId>eureka-server</artifactId>
+    <artifactId>spring-cloud-eureka-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eureka-server</name>
+    <name>spring-cloud-eureka-server</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -26,6 +26,19 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+            <!--<version>3.0.3</version>-->
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-security -->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-security</artifactId>-->
+            <!--<version>2.2.4.RELEASE</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

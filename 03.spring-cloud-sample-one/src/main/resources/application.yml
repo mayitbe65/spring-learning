@@ -1,0 +1,25 @@
+#spring:
+#  cloud:
+#    config:
+#      name: spring-cloud-sample-one
+#      uri: http://localhost:8013
+
+spring:
+  application:
+    name: spring-cloud-sample-one
+
+server:
+  port: 8013
+
+# Eureka相关配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8012/eureka/
+    proxy-user-name: admin
+    proxy-password: 123456
+  instance:
+    lease-renewal-interval-in-seconds: 10      # 心跳时间，即服务续约间隔时间（缺省为30s）
+    lease-expiration-duration-in-seconds: 60  # 发呆时间，即服务续约到期时间（缺省为90s）
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}

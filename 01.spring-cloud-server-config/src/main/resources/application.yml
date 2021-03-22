@@ -1,6 +1,8 @@
 spring:
   application:
     name: spring-cloud-server-config
+  profiles:
+    active: native #启用本地配置文件
   cloud:
     config:
       server:
@@ -8,4 +10,4 @@ spring:
           search-locations: classpath:/configs/
 
 server:
-  port: 8000
+  port: 8011
