@@ -7,10 +7,10 @@
 spring:
   application:
     name: spring-cloud-eureka-server
-#  security:
-#    user:
-#      name: admin
-#      password: 123456
+  security:
+    user:
+      name: admin
+      password: 123456
 
 server:
   port: 8012
