@@ -1,0 +1,5 @@
+spring:
+  cloud:
+    config:
+      name: spring-cloud-sample-two
+      uri: http://localhost:8011

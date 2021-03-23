@@ -1,0 +1,5 @@
+spring:
+  cloud:
+    config:
+      name: spring-cloud-eureka-server
+      uri: http://localhost:8011
