@@ -1,0 +1,5 @@
+spring:
+  cloud:
+    config:
+      name: spring-cloud-gateway
+      uri: http://localhost:8011
