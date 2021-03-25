@@ -10,6 +10,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://admin:123456@localhost:8012/eureka/
+    fetch-registry: false # https://cloud.tencent.com/developer/article/1482821
   instance:
     lease-renewal-interval-in-seconds: 10      # 心跳时间，即服务续约间隔时间（缺省为30s）
     lease-expiration-duration-in-seconds: 60  # 发呆时间，即服务续约到期时间（缺省为90s）
