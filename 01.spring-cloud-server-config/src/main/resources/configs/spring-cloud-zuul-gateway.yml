@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-gateway
+    name: spring-cloud-zuul-gateway
 
 server:
   port: 8015
@@ -15,3 +15,9 @@ eureka:
     lease-expiration-duration-in-seconds: 60  # 发呆时间，即服务续约到期时间（缺省为90s）
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+
+zuul:
+  routes:
+    spring-cloud-sample-two:
+      path: /**
+      url: http://127.0.0.1:8014

@@ -12,7 +12,7 @@
 	<groupId>com.spring</groupId>
 	<artifactId>gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>05.spring-cloud-gateway</name>
+	<name>05.spring-cloud-zuul-gateway</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
