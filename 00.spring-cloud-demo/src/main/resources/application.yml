@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-cloud-demo
+  profiles:
+    active: native #启用本地配置文件
+
+server:
+  port: 8010
+
