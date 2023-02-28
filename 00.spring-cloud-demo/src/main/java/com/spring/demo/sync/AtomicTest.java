@@ -8,6 +8,7 @@ public class AtomicTest {
 
     private static final AtomicInteger ai = new AtomicInteger(0);
 
+
     public static void main(String[] args) throws InterruptedException {
 
         Thread[] threads = new Thread[100];
