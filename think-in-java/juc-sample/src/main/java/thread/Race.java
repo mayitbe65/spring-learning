@@ -1,6 +1,6 @@
 package thread;
 
-public class Race implements Runnable{
+public class Race implements Runnable {
 
     private static String winner;
 

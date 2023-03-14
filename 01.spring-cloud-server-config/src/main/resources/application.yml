@@ -3,10 +3,10 @@ spring:
     name: spring-cloud-server-config
   profiles:
     active: native #启用本地配置文件
-#  security:
-#    user:
-#      name: admin
-#      password: 123456
+  #  security:
+  #    user:
+  #      name: admin
+  #      password: 123456
   cloud:
     config:
       server:
